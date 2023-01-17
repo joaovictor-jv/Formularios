@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f1f1f1 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#sides {
+    width: 800px;
+    height: 450px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 1px 1px 5px #808080;
+    margin-top: 70px;
+}
+
+#mode_icon{
+    position: absolute;
+    cursor: pointer;
+    color: black;
+    top: 20px;
+    right: 20px;
+}
+
+.fa-arrow-right {
+    color: #696969;
+}
+
+#central-icon {
+    position: absolute;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 1px 1px 5px #808080;
+    border-radius: 100px;
+    padding: 20px;
+}
+
+#sideOne {
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#form_header {
+    color: #696969;
+    position: relative;
+    bottom: 36px;
+}
+
+#register_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-box input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #696969;
+    width: 300px;
+}
+
+#registerButton {
+    background-color: #FFA500;
+    border: none;
+    color: #fff;
+    width: 110px;
+    height: 30px;
+    box-shadow: 1px 1px 5px #808080;
+}
+
+#sideTwo {
+    width: 400px;
+    height: 100%;
+    background: linear-gradient(120deg, #20B2AA, #2E8B57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#session_header {
+    color: #fff;
+    width: 300px;
+    position: relative;
+    bottom: 60px;
+}
+
+
+#social_medias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#social_medias button {
+    font-size: 14px;
+    color: #fff;
+    width: 300px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px #808080;
+}
+
+#facebookButton {
+    background-color: #3b5998;
+    gap: 60px;
+}
+
+#facebookButton img {
+    position: relative;
+    left: 3px;
+}
+
+#twitterButton {
+    background-color: #00aaec;
+    gap: 80px;
+}
+
+#emailButton {
+    background-color: #43c4bf;
+    gap: 80px;
+}
+
+#twitterButton img,
+#emailButton img {
+    position: relative;
+    left: 10px;
+}
+
+
+/*MODO DARK*/
+
+.dark#corpo h1 {
+    color: #fff;
+}
+
+.dark#corpo #sideOne {
+    background-color: #312d37;
+}
+
+.dark#corpo .input-box input{
+    color: #fff;
+}
+
+.dark#corpo #sideTwo {
+    background: rgb(79,79,79);
+background: linear-gradient(90deg, rgba(79,79,79,1) 0%, rgba(0,128,0,1) 100%);
+}
+
+.dark#corpo #mode_icon {
+    color: #fff;
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f1f1f1 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+form {
+    background: rgb(9, 9, 121);
+    background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(15, 1, 255, 1) 0%, rgba(0, 146, 255, 1) 100%);
+    width: 350px;
+    height: 450px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+    box-shadow: 1px 1px 5px #696969;
+    position: relative;
+}
+
+#mode_icon {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    cursor: pointer;
+}
+
+img {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+#form_header {
+    color: #fff;
+    position: relative;
+    bottom: 10px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    color: #fff;
+}
+
+.input-icon {
+    padding-bottom: 5px;
+}
+
+.input-box {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D3D3D3;
+    gap: 10px;
+}
+
+.input-box input {
+    outline: none;
+    width: 280px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.input-checkbox {
+    width: 295px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-checkbox input {
+    width: 16px;
+    height: 16px;
+}
+
+.input-checkbox label {
+    font-size: 12px;
+}
+
+#loginButton {
+    background-color: #fff;
+    color: #0f01ff;
+    border: none;
+    border-radius: 25px;
+    height: 35px;
+    width: 80px;
+    font-weight: bolder;
+}
+
+#loginButton:hover {
+    transition: ease-in-out 0.5s;
+    transform: scale(1.1);
+}
+
+#loginButton:not(hover) {
+    transition: ease-in-out 0.5s;
+    transform: scale(1.0);
+}
+
+#forgotPassword {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+}
+
+#forgotPassword:hover {
+    color: #00BFFF;
+}
+
+nav{
+    font-weight: bolder;
+}
+
+
+/*MODO DARK*/
+
+.dark#corpo form {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 23, 102, 1) 100%);
+}
+
+.dark#corpo .fa-sun {
+    color: #fff;
+}
+
+.dark#corpo #loginButton{
+    color: rgba(0, 23, 102, 1);
+}
